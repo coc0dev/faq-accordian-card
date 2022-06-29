@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(273, 75%, 66%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    color: hsl(238, 29%, 16%);
+}
+
+.box {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.online {
+    transform: translate(-2%, -5%)
+}
+
+.images {
+    position: relative;
+}
+
+.card-images img {
+    margin-left: -80px;
+}
+
+.online {
+    position: absolute;
+    left: -450px;
+    top: 20px;
+    z-index: 2;
+}
+
+.bg {
+    position: absolute;
+    left: -950px;
+    top: -350px;
+    z-index: 1;
+}
+
+.cube {
+    position: absolute;
+    transform: translate(-241%, 8%);
+    z-index: 3;
+}
+
+.mobile {
+    display: none;
+}
+
+.card {
+    width: 925px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    overflow: hidden;
+}
+
+.box h1 {
+    display: flex;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.dropdown {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.dropdown .arrow {
+    float: right;
+    padding: 5px;
+    margin-right: 5px;
+    transition: .4s;
+}
+
+.dropdown.active .arrow {
+    float: right;
+    padding: 5px;
+    margin-right: 5px;
+    transform: rotate(180deg);
+    transition: .4s;
+}
+
+.faqs {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.dropdown h2 {
+    font-weight: normal;
+    font-size: 16px;
+    color: hsl(237, 12%, 33%);
+}
+
+.dropdown h2:hover {
+    cursor: pointer;
+    color: hsl(14, 88%, 65%);
+}
+
+.dropdown.active h2 {
+    font-weight: 700;
+    cursor: pointer;
+    color: hsl(238, 29%, 16%);
+}
+
+.dropdown .answer {
+    overflow: hidden;
+    height: 0;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+    font-size: 15px;
+    transition: .2s;
+}
+
+.dropdown.active .answer {
+    height: 60px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer a {
+    color:hsl(273, 45%, 26%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.footer a:hover {
+    color:hsl(14, 88%, 65%);
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        width: 375px;
+        height: fit-content;
+        padding: 25px;
+        overflow: visible;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: initial;
+    }
+
+    .faqs {
+        width: 100%;
+    }
+
+    .box h1 {
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .cube {
+        display: none;
+    }
+
+    .online-mob {
+        position: absolute;
+        transform: translate(45%, -70%);
+        width: 250px;
+    }
+
+    .bg-mob {
+        position: absolute;
+        transform: translate(50%, -10%);
+    }
+}
