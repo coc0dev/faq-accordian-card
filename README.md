@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faqaccordioncard-html-css-js-flexbox-_hOxO_IN-3)
+- Live Site URL: [Netlify](https://roaring-valkyrie-6d1da8.netlify.app/)
 
 ## My process
 
@@ -52,4 +52,4 @@ window.addEventListener('resize', () => {})
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/coc0dev)
+- Frontend Mentor - [@coc0dev](https://www.frontendmentor.io/profile/coc0dev)
